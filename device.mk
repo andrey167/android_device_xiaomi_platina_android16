@@ -9,6 +9,11 @@ DEVICE_PATH := device/xiaomi/platina
 # Add common definitions for Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
+
+USE_DEX2OAT_DEBUG := false
+PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
+PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false   
+
 # Maintainer Flag
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.lunaris.maintainer=Mrandrey167
