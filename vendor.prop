@@ -150,8 +150,6 @@ ro.fastbootd.available=true
 # Fingerprint
 persist.vendor.fingerprint.type=rear
 
-# FRP
-ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
