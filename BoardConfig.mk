@@ -180,6 +180,9 @@ PRODUCT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
 # Treble
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 
+# SurfaceFlinger
+TARGET_USE_AOSP_SURFACEFLINGER := true
+
 # Verity
 # Only needed for signing
 BOARD_AVB_ENABLE := false
