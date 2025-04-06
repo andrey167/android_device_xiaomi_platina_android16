@@ -91,6 +91,9 @@ on boot
     chown system system /persist/speccfg/vendor_persist.prop
     chown system system /persist/speccfg/submask
     chown system system /persist/speccfg/partition
+    
+    # Optimize vfs cache pressure
+    write /proc/sys/vm/vfs_cache_pressure 40
 
 #Create folder dump yuv images while debugging
     mkdir /data/vendor/camera 0770 camera camera
