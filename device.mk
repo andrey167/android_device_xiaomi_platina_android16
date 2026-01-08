@@ -9,6 +9,10 @@ DEVICE_PATH := device/xiaomi/platina
 # Add common definitions for Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
+
+# Dolby
+$(call inherit-product, hardware/dolby/dolby.mk)
+
 # ANT+
 PRODUCT_PACKAGES += \
     com.dsi.ant@1.0.vendor
