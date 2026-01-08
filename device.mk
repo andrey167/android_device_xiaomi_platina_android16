@@ -13,6 +13,9 @@ $(call inherit-product, hardware/qcom-caf/common/common.mk)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.lunaris.maintainer=Mrandrey167
 
+# Dolby
+$(call inherit-product, hardware/dolby/dolby.mk)
+
 # ANT+
 PRODUCT_PACKAGES += \
     com.dsi.ant@1.0.vendor
