@@ -29,7 +29,7 @@
 
 on boot
     # Audio
-    write /sys/kernel/sound_control/headphone_gain "12 12"
+    write /sys/kernel/sound_control/headphone_gain "10 10"
     chown system system /sys/kernel/sound_control/headphone_gain
     chmod 0664 /sys/kernel/sound_control/headphone_gain
 
