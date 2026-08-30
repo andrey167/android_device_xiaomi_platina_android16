@@ -46,3 +46,9 @@ ro.lmk.use_psi=false
 
 # Telephony
 ro.telephony.handle_audio_direction_changes_between_call_state_changes=false
+
+# IORapd
+iorapd.perfetto.enable=false
+iorapd.readahead.enable=false
+persist.device_config.runtime_native_boot.iorap_readahead_enable=false
+ro.iorapd.enable=false
