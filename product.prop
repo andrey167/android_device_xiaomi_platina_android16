@@ -5,10 +5,7 @@ persist.sys.activity_anim_perf_override=true
 ro.bpf.kver_override=5.4.186
 
 # Blur
-persist.sysui.disableBlur=1
-ro.launcher.blur.appLaunch=0
-ro.sf.blurs_are_expensive=0
-ro.surface_flinger.supports_background_blur=0
+ro.surface_flinger.supports_background_blur=1
 
 # Camera
 persist.vendor.bokeh.switch.lux=290
