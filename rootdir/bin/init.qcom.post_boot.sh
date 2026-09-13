@@ -27,27 +27,23 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
+function configure_read_ahead_kb_values() {
+    echo 512 > /sys/block/mmcblk0/bdi/read_ahead_kb
+    echo 512 > /sys/block/mmcblk0/queue/read_ahead_kb
+    echo 512 > /sys/block/mmcblk0rpmb/bdi/read_ahead_kb
+    echo 512 > /sys/block/mmcblk0rpmb/queue/read_ahead_kb
+    echo 512 > /sys/block/dm-0/queue/read_ahead_kb
+    echo 512 > /sys/block/dm-1/queue/read_ahead_kb
+    echo 512 > /sys/block/dm-2/queue/read_ahead_kb
+}
+
 #Apply settings for sdm660, sdm636,sda636
-echo 2 > /sys/devices/system/cpu/cpu4/core_ctl/min_cpus
 echo 60 > /sys/devices/system/cpu/cpu4/core_ctl/busy_up_thres
 echo 30 > /sys/devices/system/cpu/cpu4/core_ctl/busy_down_thres
 echo 100 > /sys/devices/system/cpu/cpu4/core_ctl/offline_delay_ms
 echo 1 > /sys/devices/system/cpu/cpu4/core_ctl/is_big_cluster
 echo 4 > /sys/devices/system/cpu/cpu4/core_ctl/task_thres
 
-# Setting b.L scheduler parameters
-echo 96 > /proc/sys/kernel/sched_upmigrate
-echo 90 > /proc/sys/kernel/sched_downmigrate
-echo 140 > /proc/sys/kernel/sched_group_upmigrate
-echo 120 > /proc/sys/kernel/sched_group_downmigrate
-echo 0 > /proc/sys/kernel/sched_select_prev_cpu_us
-echo 400000 > /proc/sys/kernel/sched_freq_inc_notify
-echo 400000 > /proc/sys/kernel/sched_freq_dec_notify
-echo 5 > /proc/sys/kernel/sched_spill_nr_run
-echo 1 > /proc/sys/kernel/sched_restrict_cluster_spill
-echo 100000 > /proc/sys/kernel/sched_short_burst_ns
-echo 1 > /proc/sys/kernel/sched_prefer_sync_wakee_to_waker
-echo 20 > /proc/sys/kernel/sched_small_wakee_task_load
 
 # disable thermal bcl hotplug to switch governor
 echo 0 > /sys/module/msm_thermal/core_control/enabled
@@ -92,7 +88,6 @@ do
     echo 250 > $cpubw/bw_hwmon/up_scale
     echo 1600 > $cpubw/bw_hwmon/idle_mbps
 done
-
 for memlat in /sys/class/devfreq/*qcom,memlat-cpu*
 do
     echo "mem_latency" > $memlat/governor
@@ -106,7 +101,7 @@ start vendor.cdsprpcd
 
 emmc_boot=`getprop vendor.boot.emmc`
 case "$emmc_boot"
-    in "true")
+    in "true"
         chown -h system /sys/devices/platform/rs300000a7.65536/force_sync
         chown -h system /sys/devices/platform/rs300000a7.65536/sync_sts
         chown -h system /sys/devices/platform/rs300100a7.65536/force_sync
@@ -116,34 +111,6 @@ esac
 
 # Post-setup services
 setprop vendor.post_boot.parsed 1
-
-# Let kernel know our image version/variant/crm_version
-if [ -f /sys/devices/soc0/select_image ]; then
-    image_version="10:"
-    image_version+=`getprop ro.build.id`
-    image_version+=":"
-    image_version+=`getprop ro.build.version.incremental`
-    image_variant=`getprop ro.product.name`
-    image_variant+="-"
-    image_variant+=`getprop ro.build.type`
-    oem_version=`getprop ro.build.version.codename`
-    echo 10 > /sys/devices/soc0/select_image
-    echo $image_version > /sys/devices/soc0/image_version
-    echo $image_variant > /sys/devices/soc0/image_variant
-    echo $oem_version > /sys/devices/soc0/image_crm_version
-fi
-
-# Change console log level as per console config property
-# console_config=`getprop persist.console.silent.config`
-# case "$console_config" in
-#     "1")
-#         echo "Enable console config to $console_config"
-#         echo 0 > /proc/sys/kernel/printk
-#         ;;
-#     *)
-#         echo "Enable console config to $console_config"
-#         ;;
-# esac
 
 # Parse misc partition path and set property
 misc_link=$(ls -l /dev/block/bootdevice/by-name/misc)
