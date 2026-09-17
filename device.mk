@@ -489,6 +489,18 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/qcom/opensource/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
 
+
+# lunaris translate
+PRODUCT_PACKAGES += \
+    Ru-A16_BatteryStats \
+    Ru-A16_ColumbusService \
+    Ru-A16_framework-res \
+    Ru-A16_GameSpace \
+    Ru-A16_Launcher3 \
+    Ru-A16_LMOFreeformSidebar \
+    Ru-A16_SettingsGoogle \
+    Ru-A16_SystemUI
+
 # VINTF
 PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
 

@@ -1,0 +1,63 @@
+prebuilt_etc {
+    name: "Ru-A16_ColumbusService",
+    src: "Ru-A16_ColumbusService.apk",
+    filename: "Ru-A16_ColumbusService.apk",
+    sub_dir: "overlay",
+    product_specific: true,
+}
+
+prebuilt_etc {
+    name: "Ru-A16_framework-res",
+    src: "Ru-A16_framework-res.apk",
+    filename: "Ru-A16_framework-res.apk",
+    sub_dir: "overlay",
+    product_specific: true,
+}
+
+prebuilt_etc {
+    name: "Ru-A16_GameSpace",
+    src: "Ru-A16_GameSpace.apk",
+    filename: "Ru-A16_GameSpace.apk",
+    sub_dir: "overlay",
+    product_specific: true,
+}
+
+prebuilt_etc {
+    name: "Ru-A16_Launcher3",
+    src: "Ru-A16_Launcher3.apk",
+    filename: "Ru-A16_Launcher3.apk",
+    sub_dir: "overlay",
+    product_specific: true,
+}
+
+prebuilt_etc {
+    name: "Ru-A16_LMOFreeformSidebar",
+    src: "Ru-A16_LMOFreeformSidebar.apk",
+    filename: "Ru-A16_LMOFreeformSidebar.apk",
+    sub_dir: "overlay",
+    product_specific: true,
+}
+
+prebuilt_etc {
+    name: "Ru-A16_SettingsGoogle",
+    src: "Ru-A16_SettingsGoogle.apk",
+    filename: "Ru-A16_SettingsGoogle.apk",
+    sub_dir: "overlay",
+    product_specific: true,
+}
+
+prebuilt_etc {
+    name: "Ru-A16_SystemUI",
+    src: "Ru-A16_SystemUI.apk",
+    filename: "Ru-A16_SystemUI.apk",
+    sub_dir: "overlay",
+    product_specific: true,
+}
+
+prebuilt_etc {
+    name: "Ru-A16_BatteryStats",
+    src: "Ru-A16_BatteryStats.apk",
+    filename: "Ru-A16_BatteryStats.apk",
+    sub_dir: "overlay",
+    product_specific: true,
+}
