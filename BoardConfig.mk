@@ -129,10 +129,9 @@ BOARD_SUPER_PARTITION_SIZE := $(shell expr $(BOARD_SUPER_PARTITION_CUST_DEVICE_S
 BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := $(shell expr $(BOARD_SUPER_PARTITION_SIZE) - 4194304)
 
 # Partitions - reserved size
-ifeq ($(WITH_GMS),false)
-# Reserve space for gapps install in Vanilla builds
+
 -include vendor/lineage/config/BoardConfigReservedSize.mk
-endif
+
 
 BOARD_ROOT_EXTRA_SYMLINKS := \
     /vendor/dsp:/dsp \

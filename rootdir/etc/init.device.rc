@@ -86,6 +86,12 @@ on post-fs-data
     mkdir /mnt/vendor/persist/fpc 0770 system system	
     copy /data/vendor/fpc/user.db /data/vendor_de/0/fpdata/user.db	
     chown system system /data/vendor_de/0/fpdata/user.db	
+     chown system system /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
+    chown system system /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq
+    chown system system /sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq
+    chmod 0660 /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
+    chmod 0660 /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq
+    chmod 0660 /sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq
 
 # Workaround for camera HAL can not read sys property
 on property:sys.camera.face.unlock=*
