@@ -25,6 +25,7 @@ telephony.lteOnCdmaDevice=1
 
 # Render
 debug.cpurend.vsync=false
+persist.hwc.ptor.enable=true
 
 # Disable Skia tracing by default
 debug.hwui.skia_atrace_enabled=false
