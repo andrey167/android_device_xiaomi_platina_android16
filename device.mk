@@ -214,6 +214,7 @@ PRODUCT_PACKAGES += \
     init.qcom.sh
 
 PRODUCT_PACKAGES += \
+    ax_init_sdm660.rc \
     init.fingerprint.rc \
     init.qcom.power.rc \
     init.qcom.rc \
@@ -231,6 +232,9 @@ PRODUCT_PACKAGES += \
 # IRQ
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/ax_kernel_manager.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ax_kernel_manager.xml
 
 # IRSC
 PRODUCT_COPY_FILES += \
