@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: crDroid Android Project
+     SPDX-FileCopyrightText: The OmniROM Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- App -->
+    <string name="omnijaws_app_name" translatable="false">OmniJaws</string>
+
+    <!-- Weather Providers -->
+    <string name="omnijaws_provider_openweathermap" translatable="false">OpenWeatherMap</string>
+    <string name="omnijaws_provider_metnorway" translatable="false">MET Norway</string>
+    <string name="omnijaws_provider_pirate_weather" translatable="false">Pirate Weather</string>
+    <string name="omnijaws_provider_openmeteo" translatable="false">Open-Meteo</string>
+    <string name="omnijaws_provider_visualcrossing" translatable="false">Visual Crossing</string>
+    <string name="omnijaws_visual_crossing_key" translatable="false">Visual Crossing API key</string>
+    <string name="omnijaws_interval_1_hour">1 час</string>
+    <string name="omnijaws_interval_2_hour">2 часа</string>
+    <string name="omnijaws_interval_4_hour">4 часа</string>
+    <string name="omnijaws_interval_6_hour">6 часов</string>
+    <string name="omnijaws_interval_12_hour">12 часов</string>
+    <string name="omnijaws_last_update_time">Последнее обновление</string>
+    <string name="omnijaws_weather_last_update_never">Никогда</string>
+    <string name="omnijaws_weather_custom_location_title">Пользовательское местоположение</string>
+    <string name="omnijaws_custom_location_title">Настройка местоположения</string>
+    <string name="omnijaws_custom_location_summary">Указать местоположение вручную</string>
+    <string name="omnijaws_weather_custom_location_missing">Местоположение не указано</string>
+    <string name="omnijaws_grant_location_permission_title">Предоставить разрешение</string>
+    <string name="omnijaws_grant_location_permission_summary">Требуется доступ к местоположению</string>
+    <string name="omnijaws_weather_icon_pack_title">Пакет значков</string>
+    <string name="omnijaws_category_api">Настройки API</string>
+    <string name="omnijaws_owm_key">Ключ OpenWeatherMap</string>
+    <string name="omnijaws_pirate_weather_key">Ключ Pirate Weather</string>
+    <string name="omnijaws_provider_disabled">Отключено</string>
+    <string name="omnijaws_api_key_note">Требуется ключ API</string>
+    <string name="omnijaws_api_links_note">Получить ключи здесь</string>
+    <string name="omnijaws_unit_metric">Метрическая</string>
+    <string name="omnijaws_unit_imperial">Имперская</string>
+    <string name="omnijaws_forecast_card_title">Прогноз</string>
+    <string name="omnijaws_forecast_show_less">Показать меньше</string>
+    <string name="omnijaws_forecast_show_more">Показать больше</string>
+    <string name="omnijaws_forecast_today">Сегодня</string>
+    <string name="omnijaws_detail_feels_like">Ощущается как</string>
+    <string name="omnijaws_uv_level_low">Низкий</string>
+    <string name="omnijaws_uv_level_moderate">Умеренный</string>
+    <string name="omnijaws_uv_level_high">Высокий</string>
+    <string name="omnijaws_uv_level_very_high">Очень высокий</string>
+    <string name="omnijaws_uv_level_extreme">Экстремальный</string>
+    <string name="omnijaws_detail_uv_index">УФ-индекс</string>
+    <string name="omnijaws_detail_humidity">Влажность</string>
+    <string name="omnijaws_detail_wind">Ветер</string>
+    <string name="omnijaws_pressure_level_low">Низкий</string>
+    <string name="omnijaws_pressure_level_high">Высокий</string>
+    <string name="omnijaws_pressure_level_normal">Нормальный</string>
+    <string name="omnijaws_detail_pressure">Давление</string>
+    <string name="omnijaws_unit_hpa">hPa</string>
+    <string name="omnijaws_visibility_level_clear">Ясная</string>
+    <string name="omnijaws_visibility_level_good">Хорошая</string>
+    <string name="omnijaws_visibility_level_moderate">Умеренный</string>
+    <string name="omnijaws_visibility_level_poor">Плохая</string>
+    <string name="omnijaws_detail_visibility">Видимость</string>
+    <string name="omnijaws_visibility_subtitle">Видимость: %1$s</string>
+    <string name="omnijaws_daylight_duration_format">%1$dh %2$dm</string>
+    <string name="omnijaws_detail_sunrise_sunset">Восход/закат</string>
+    <string name="omnijaws_theme_light">Светлая</string>
+    <string name="omnijaws_theme_dark">Тёмная</string>
+    <string name="omnijaws_theme_system">Системная</string>
+    <string name="omnijaws_trans_semi">Полупрозрачный</string>
+    <string name="omnijaws_trans_full">Прозрачный</string>
+    <string name="omnijaws_trans_solid">Непрозрачный</string>
+    <string name="omnijaws_theme_follow_app">Следовать настройкам приложения</string>
+    <string name="omnijaws_theme_follow_widget">Следовать настройкам виджета</string>
+    <string name="omnijaws_activity_title">Погода</string>
+    <string name="omnijaws_weather_config_title">Настройки погоды</string>
+    <string name="omnijaws_location_browse_activity_title">Выбор местоположения</string>
+    <string name="omnijaws_weather_widget">Виджет погоды</string>
+    <string name="omnijaws_weather_widget_desc">Отображает текущую информацию о погоде и прогнозы.</string>
+    <string name="omnijaws_dew_point_dry">Сухо</string>
+    <string name="omnijaws_dew_point_comfortable">Комфортно</string>
+    <string name="omnijaws_dew_point_slightly_humid">Слегка влажно</string>
+    <string name="omnijaws_dew_point_humid">Влажно</string>
+    <string name="omnijaws_detail_dew_point">Точка росы</string>
+    <string name="omnijaws_forecast_card_hourly_title">Почасовой прогноз</string>
+    <string name="omnijaws_category_appearance">Внешний вид</string>
+    <string name="omnijaws_color_theme_title">Цветовая тема</string>
+    <string name="omnijaws_bg_transparency_title">Прозрачность фона</string>
+    <string name="omnijaws_icon_theme_title">Тема значков</string>
+    <string name="omnijaws_service_error_long">Ошибка загрузки данных о погоде</string>
+    <string name="omnijaws_service_disabled">Служба погоды отключена</string>
+    <string name="omnijaws_service_unkown">Произошла неизвестная ошибка</string>
+    <string name="omnijaws_category_general">Общие</string>
+    <string name="omnijaws_enable_title">Включить</string>
+    <string name="omnijaws_provider_title">Поставщик погоды</string>
+    <string name="omnijaws_units_title">Единицы измерения</string>
+    <string name="omnijaws_update_interval_title">Интервал обновления</string>
+    <string name="omnijaws_menu_title">Меню</string>
+    <string name="omnijaws_update_title">Обновить</string>
+    <string name="omnijaws_settings_title">Настройки</string>
+    <string name="omnijaws_temperature_low">Низкий</string>
+    <string name="omnijaws_temperature_high">Высокий</string>
+    <string name="omnijaws_dashboard_error_subtitle">Проверьте настройки или попробуйте обновить</string>
+    <string name="omnijaws_dashboard_provider_attribution">Данные о погоде предоставлены %1$s</string>
+    <string name="omnijaws_location_query_hint">Поиск местоположения</string>
+    <string name="omnijaws_location_city_name">Название города</string>
+    <string name="omnijaws_city_unkown">Неизвестно</string>
+</resources>
