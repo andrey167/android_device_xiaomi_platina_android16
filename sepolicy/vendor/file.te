@@ -7,3 +7,8 @@ type sysfs_rpm, sysfs_type, fs_type;
 type sysfs_system_sleep_stats, sysfs_type, fs_type;
 type sysfs_touchpanel, fs_type, sysfs_type;
 type thermal_data_file, file_type, data_file_type;
+typealias sysfs_battery_supply alias vendor_sysfs_battery_supply;
+typealias sysfs_devfreq alias vendor_sysfs_devfreq;
+typealias sysfs_graphics alias vendor_sysfs_graphics;
+typealias sysfs_kgsl alias vendor_sysfs_kgsl;
+type vendor_sysfs_kgsl_max_gpuclk, fs_type, sysfs_type;
